@@ -110,6 +110,7 @@ button:hover {
 }
 
 .rodape {
+    padding: 2rem;
     color: var(--cor-principal);
 }
 
