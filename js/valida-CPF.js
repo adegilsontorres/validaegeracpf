@@ -1,13 +1,10 @@
 export default function verificaCPF(campo, resultadoCPF) {
     const cpf = campo.value.replace(/\.|-/g, "");
-    console.log(resultadoCPF);
-
-    
+  
 
     if (validaNumerosRepetidos(cpf) || validaPrimeiroDigito(cpf) || validaSegundoDigito(cpf)) {
     resultadoCPF.innerHTML = "O CPF é inválido";
     campoCPF.classList.add('invalido');
-    console.log(campoCPF);
     
     return;
 }else {
@@ -30,7 +27,7 @@ function validaNumerosRepetidos(cpf) {
         '88888888888',
         '99999999999'
     ]
-    console.log(`Número repetido?: ${numerosRepetidos.includes(cpf)}`)
+
     return numerosRepetidos.includes(cpf);
 }
 
@@ -48,7 +45,7 @@ function validaPrimeiroDigito(cpf) {
     if (soma == 10 || soma == 11) {
         soma = 0;
     }    
-    console.log(`Primeiro dígito: ${soma != cpf[9]}`)
+
     return soma != cpf[9];
 }
 
@@ -67,7 +64,7 @@ function validaSegundoDigito(cpf) {
         
         soma = 0;
     }
-    console.log(`Segundo dígito: ${soma != cpf[10]}`)
+
     return soma != cpf[10];
 }
 
