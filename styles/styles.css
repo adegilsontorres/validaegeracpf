@@ -36,7 +36,7 @@ button:hover {
     background-color: var(--botao-hover);
 }
 
-.cabecalho {
+.cabecalho, .rodape {
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -83,8 +83,8 @@ button:hover {
 }
 
 #CampoCPFGerado{
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
     width: 40%;
     height: 120px;
     padding: 0.5rem;
@@ -107,6 +107,15 @@ button:hover {
 
 .valido {
     border: 3px solid green;
+}
+
+.rodape {
+    color: var(--cor-principal);
+}
+
+.rodape p a {
+    color: var(--botao-hover);
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
