@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de CPF</title>
+    <link rel="icon" href="./icone.svg">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Valide ou gere um CPF</h1>
+    </header>
+    
+    <main class="container">
+
+        <div class="card">
+            
+            <label class="campo__etiqueta" for="campoCPF">Insira um CPF</label>
+            <input name="cpf" id="campoCPF" type="text" minlength="11"
+            maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-.?\d{2}" />
+            <span id="resultadoCPF"></span>
+            <button id="validar">Validar CPF</button>
+        </div>
+        <div class="card">
+            <label class="campo__etiqueta" for="CampoCPFGerado">Insira um CPF</label>
+            <textarea name="CampoCPFGerado" id="CampoCPFGerado" placeholder="O CPF será gerado aqui"></textarea>
+            <button id="gerarCPF">Gerar CPF</button>
+        </div>
+
+    </main>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
