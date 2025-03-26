@@ -1,5 +1,4 @@
 export default function gerarCPF(CampoCPFGerado) {
-    console.log(CampoCPFGerado);
     
     let novoCPF = '';
 
