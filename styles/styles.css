@@ -38,9 +38,11 @@ button {
 button:hover {
     transition: 0.7s;
     background-color: var(--botao-hover);
+    cursor: pointer;
 }
 
-.cabecalho, .rodape {
+.cabecalho,
+.rodape {
     display: flex;
     justify-content: center;
     padding: 2rem;
@@ -64,6 +66,7 @@ button:hover {
 
     border: 1px solid var(--cor-preto);
     border-radius: 4px;
+    box-shadow: 2px 2px 8px #212121;
 }
 
 .card {
@@ -86,21 +89,23 @@ button:hover {
     gap: 40px;
 }
 
-#CampoCPFGerado{
+#CampoCPFGerado {
     font-size: 1.2rem;
     margin: 0.5rem 1rem;
     width: 40%;
     height: 120px;
     padding: 0.5rem;
+    text-align: center;
 }
 
 #campoCPF {
     width: 40%;
     height: 2rem;
     padding: 0.5rem;
+    text-align: center;
 }
 
-#resultadoCPF{
+#resultadoCPF {
     height: 1rem;
     display: hidden;
 }
@@ -136,8 +141,28 @@ button:hover {
 
 
 @media screen and (max-width: 768px) {
-    .container {    
+    .container {
         padding: 0.5rem;
         width: 60vw;
     }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    #CampoCPFGerado {
+        font-size: 1rem;
+        margin: 0.5rem;
+        width: 80%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    #campoCPF {
+        width: 80%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+
 }
