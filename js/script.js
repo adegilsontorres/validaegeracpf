@@ -7,9 +7,6 @@ const resultadoCPF = document.getElementById('resultadoCPF');
 const btnGerarCPF = document.getElementById('gerarCPF');
 const CampoCPFGerado = document.getElementById('CampoCPFGerado');
 
-console.log(CampoCPFGerado);
-
-
 campoCPF.addEventListener('blur', () => {
     campoCPF.classList.remove('invalido');
     campoCPF.classList.remove('valido');
@@ -28,5 +25,6 @@ btnValidaCPF.addEventListener('click', () => {
 btnGerarCPF.addEventListener('click', () => {
     gerarCPF(CampoCPFGerado);
 })
+
 
 
